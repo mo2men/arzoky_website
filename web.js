@@ -3,12 +3,11 @@ var app = express();
 app.use(express.logger());
 
 var buffer = new Buffer(100);
-var string ;
-buffer = fs.readFileSync("index.html","utf8");
-string = buffer.toString("utf8");
-
-app.get('/', function(request, response,string) {
-  response.send(string);
+buffer = fs.readFileSync("index.html");
+var str = new String();
+str = buffer.toString('utf-8');
+app.get('/', function(request, responseg) {
+  response.send(str);
 });
 
 var port = process.env.PORT || 8080;
