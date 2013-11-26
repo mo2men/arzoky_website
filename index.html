@@ -49,15 +49,29 @@
       /* Main body and headings */
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
       }
       
 
-      #top-part{background-color:#D6D4EB}
+      #top-part, #vision {background-color:#464368;}
 
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
+	color:rgba(255, 255, 255, 0.84);
       }
+#vision h2, #vision p{
+color:rgba(255, 255, 255, 0.84);
+}
+.nav-pills a{
+color:rgba(255, 255, 255, 0.84);
+}
+.nav>li>a:hover, .nav>li>a:focus {
+text-decoration: none;
+background-color: #412466;
+}
+
+
 
       
       /* Carousel base class */
@@ -92,6 +106,7 @@
       border: 0;
       z-index: 10;
       }
+    
 
       p.lead {
         padding-top: 1.5%;
@@ -130,9 +145,10 @@ text-align: right;
 .carousel-caption h2 {
 text-align: right;
 }
-.container h2,.container p {
+#vision h2,#vision p {
 text-align: right;
 }
+
 .faq h3,.accordion-heading a, .accordion-inner {
 text-align: right;
 }
@@ -306,15 +322,15 @@ text-align: right;
 	
 	<div class="span4">
 	  
-	  <img class="img-polaroid" src="Solutions.jpg">
+	  <img class="img-polaroid" src="https://github.com/mo2men/arzoky_website/blob/develop/Solutions.jpg?raw=true">
 	
 	  <h4>الفكرة</h4>
 	  
 	  <p>
-            نحن نواصل أصحاب العمل الذين يبحثون عن عمال مهرة ونوفر لهم إمكانيت تحديد أفضل عمل عن طريء تقويم اعماله إلسابقة.</p>
+            نحن نوصل أصحاب العمل الذين يبحثون عن عمال مهرة ونوفر لهم إمكانيت تحديد أفضل عامل عن طريء تقويم اعماله إلسابقة.</p>
 	</div>
 	<div class="span4">
-	  <img class="img-polaroid" src="support.jpg">
+	  <img class="img-polaroid" src="https://github.com/mo2men/arzoky_website/blob/develop/support.jpg?raw=true">
       
       
 	  <h4>إدعمنا</h4>
@@ -322,12 +338,13 @@ text-align: right;
 	  <p>
             نحن نرحب بأي دعم يمكن إن تقدمه لنا لأنجح فكرتنا ونشرها في كل ربوع مصر. 
 	  </p>
+<button class="btn btn-success btn-large">تبرع</button>
 	</div>
       </div>
     </div>
 
 
-    <div class="bs-header" id="top-part">
+    <div class="bs-header" id="vision">
       <div class="container">
 	<h2>رؤيتنا</h2>
 	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
