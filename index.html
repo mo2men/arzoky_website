@@ -68,6 +68,7 @@
       /* Since positioning the image, we need to help out the caption */
       .carousel-caption {
       z-index: 10;
+      color :white;
       }
 
       /* Declare heights because of positioning of img element */
@@ -119,7 +120,22 @@
       .statistics h3, .statistics p {
         color: white;
       }
+.span4 h4 {
+text-align: center;
+}
 
+.span4 p {
+text-align: right;
+}
+.carousel-caption h2 {
+text-align: right;
+}
+.container h2,.container p {
+text-align: right;
+}
+.faq h3,.accordion-heading a, .accordion-inner {
+text-align: right;
+}
       /* Marketing Copy and Footer */
       .copy {
         padding-top: 2.5%;
@@ -153,7 +169,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="index.html"> <img src="file:///home/momen/arzoky_website/logo.jpg">Arzoky</a>
+          <a class="brand" href="index.html">Arzoky</a>
           
           <div class="nav-collapse collapse">
             <ul class="nav">
@@ -233,8 +249,14 @@
 	    <img src="http://placehold.it/480x300" alt="First Slide">
 	    <div class="container">
 	      <div class="carousel-caption">
-		<h1>Example headline.</h1>
-		<p>Note: Anything</p>
+		<h2>شارك الحلم و أنشر الفكرة</h2>
+	     <div class="span8  social">
+            <!-- Social buttons are not included in default Bootstrap. -->
+            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+
 	      </div>
 	    </div>
 	  </div>
@@ -245,7 +267,7 @@
             <img src="https://github.com/mo2men/arzoky_website/blob/staging/slide4.jpg?raw=true" alt="Third slide">
             <div class="container">
               <div class="carousel-caption">
-		<h1>إنضم إلينا الأن</h1>
+		<h2>إنضم إلينا الأن</h2>
 		<input class="btn btn-primary" style="clear: left; width 20%; height: 32px; font-size: 13px;" type="submit" name="commit" value="تسجيل إلدخول" />
               </div>
             </div>
@@ -257,8 +279,15 @@
 	<a class="right carousel-control" href="#mycarousel" data-slide="next">
 	  &rsaquo;  </a>
       </div>
-
-       
+      <div class="row-fluid pitch ">
+        <div class="span3 offset3 video">
+	  <section class="row ">
+	    <div class="span6">
+	      <div class="flex-video widescreen"><iframe src="https://www.youtube-nocookie.com/embed/..." frameborder="0" allowfullscreen=""></iframe></div>
+	    </div>
+	  </section>
+	</div>
+      </div>
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
@@ -267,42 +296,31 @@
         <div class="span4 ">
           <img class="img-polaroid" src="http://www.kyalamicc.co.za/wp-content/uploads/2012/09/image_25.jpg">
        
-	  <h4>Customer service</h4>
+	  <h4>خدمة العملاء</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus   
+           لو كنت أرزقي وعايز تلاقي عمل, إتصل بنا على 19065 وسوف يرد عليك أحد عملائنا.    
 	  </p>
 	</div>
 	
     
 	
-	<div class="span4 ">
+	<div class="span4">
 	  
-	  <img class="img-polaroid" src="http://www.kyalamicc.co.za/wp-content/uploads/2012/09/image_25.jpg">
+	  <img class="img-polaroid" src="Solutions.jpg">
 	
-	  <h4>Customer service</h4>
+	  <h4>الفكرة</h4>
 	  
 	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus,    </p>
+            نحن نواصل أصحاب العمل الذين يبحثون عن عمال مهرة ونوفر لهم إمكانيت تحديد أفضل عمل عن طريء تقويم اعماله إلسابقة.</p>
 	</div>
-	<div class="span4 ">
-	  <img class="img-polaroid" src="http://www.kyalamicc.co.za/wp-content/uploads/2012/09/image_25.jpg">
+	<div class="span4">
+	  <img class="img-polaroid" src="support.jpg">
       
       
-	  <h4>Customer service</h4>
+	  <h4>إدعمنا</h4>
       
 	  <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. 
+            نحن نرحب بأي دعم يمكن إن تقدمه لنا لأنجح فكرتنا ونشرها في كل ربوع مصر. 
 	  </p>
 	</div>
       </div>
@@ -311,7 +329,7 @@
 
     <div class="bs-header" id="top-part">
       <div class="container">
-	<h2>Vision</h2>
+	<h2>رؤيتنا</h2>
 	<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
           porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
           mollis justo velit at nunc. Fusce nec egestas sem. Donec
@@ -325,29 +343,29 @@
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
           <div class="span10 offset1">
-            <h3>FAQ</h3>
+            <h3>اسألة</h3>
             <div class="accordion" id="accordion2">
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                    What does FAQ stand for?
+                    متى ستكون إلخدمة متوفرة؟
                   </a>
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Frequently Asked Question.
+                    نحن نعمل بكل جهدنا من أجل اتاحت إلخدمة في أقرب وقت ، تابعنا على فيسبوك وتويتر لمزيد من المعلومات.
                   </div>
                 </div>
               </div>
               <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    What's a Frequently Asked Question?
+                    هل سيتم اتاحت الخدمة لغير إلأرذقية مثل مهندسين و أطباء؟ 
                   </a>
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    A question which is commonly asked by users.
+                    نحن إلأًن نركز على تقديم الخدمة للأرزقية فقط
                   </div>
                 </div>
               </div>
